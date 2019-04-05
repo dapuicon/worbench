@@ -6,13 +6,14 @@
 
 * [AKS](k8s/aks.md)
 * [Istio](k8s/istio.md)
-* [Untitled](untitled.md)
+* [Git](k8s/untitled.md)
 
 ## K8s
 
 * [Helm](k8s-1/helm.md)
 * [AKS](k8s-1/aks.md)
-* [Kubectl](k8s-1/kubectl.md)
+* [Kubectl](k8s-1/kubectl/README.md)
+  * [Useful bash scripts](k8s-1/kubectl/useful-bash-scripts.md)
 
 ## Istio
 
