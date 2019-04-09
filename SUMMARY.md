@@ -10,7 +10,8 @@
 
 ## K8s
 
-* [Helm](k8s-1/helm.md)
+* [Helm](k8s-1/helm/README.md)
+  * [Chart](k8s-1/helm/chart.md)
 * [AKS](k8s-1/aks.md)
 * [Kubectl](k8s-1/kubectl/README.md)
   * [Useful bash scripts](k8s-1/kubectl/useful-bash-scripts.md)
