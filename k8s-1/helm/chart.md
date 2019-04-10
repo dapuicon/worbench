@@ -14,6 +14,14 @@ Once you have a dependencies file, you can run `helm dependency update` and it w
 helm dep update <repo-name>
 ```
 
+### Test locally
+
+To render just one template in a chart, use '-x':
+
+```text
+$ helm template mychart -x templates/deployment.yaml
+```
+
 ### Test Chart against Tiller
 
 When you want to test the template rendering, but not actually install anything, you can use helm install `--debug --dry-run ./mychart`. This will send the chart to the Tiller server, which will render the templates. But instead of installing the chart, it will return the rendered template to you so you can see the output
