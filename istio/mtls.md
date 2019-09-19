@@ -12,5 +12,9 @@ Istio self-signed certificates have historically had a 1 year default lifetime. 
 
 {% embed url="https://archive.istio.io/v1.1/help/ops/security/root-transition/" %}
 
+Custom certificates
+
+{% embed url="https://istio.io/docs/tasks/security/plugin-ca-cert/" %}
+
 
 
