@@ -30,3 +30,15 @@ When you want to test the template rendering, but not actually install anything,
 helm install --dry-run --debug ./mychart
 ```
 
+## Install
+
+```bash
+helm install --dry-run --debug --tiller-namespace=openapi openapi-releases/microservice -f mdggateway/PRO/values.yaml
+```
+
+## Upgrade
+
+```bash
+helm upgrade mdggateway-pro openapi-releases/microservice -f mdggateway/PRO/values.yaml --dry-run --debug --tiller-namespace=openapi
+```
+
