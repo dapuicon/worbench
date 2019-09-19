@@ -8,7 +8,7 @@
 * [Istio](k8s/istio.md)
 * [Git](k8s/untitled.md)
 
-## K8s
+## K8s <a id="k8s-1"></a>
 
 * [Helm](k8s-1/helm/README.md)
   * [Release](k8s-1/helm/release.md)
@@ -16,8 +16,12 @@
 * [AKS](k8s-1/aks.md)
 * [Kubectl](k8s-1/kubectl/README.md)
   * [Useful bash scripts](k8s-1/kubectl/useful-bash-scripts.md)
+  * [Resourcers limits](k8s-1/kubectl/resourcers-limits.md)
+* [Prometheus](k8s-1/prometheus.md)
 
 ## Istio
 
 * [Sidecar-Injection](istio/sidecar-injection.md)
+* [mTLS](istio/mtls.md)
+* [istioctl](istio/istioctl.md)
 
