@@ -20,6 +20,8 @@ To render just one template in a chart, use '-x':
 
 ```text
 $ helm template mychart -x templates/deployment.yaml
+# With subCharts
+helm template . -x charts/prometheus/templates/deployment.yaml -f ./values-dev.yaml
 ```
 
 ### Test Chart against Tiller
