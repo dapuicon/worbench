@@ -33,6 +33,6 @@ k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi/victor2.sql
 ```bash
 kubectl cp /local/path namespace/podname:path/to/directory 
 # Example
-
+k cp ./bakup/victor3.sql tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi/victor3.sql
 ```
 
