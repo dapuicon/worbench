@@ -34,5 +34,9 @@ k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi/victor2.sql
 kubectl cp /local/path namespace/podname:path/to/directory 
 # Example
 k cp ./bakup/victor3.sql tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi/victor3.sql
+# Copying a folder
+# mappings folder is copyied on wiremock folder
+k cp ./tmp/wiremock/mappings wiremock-server-b56dfcb4f-gkqh7:/home/wiremock
+
 ```
 
