@@ -10,5 +10,10 @@ for p in `kubectl get deploy -o name`;
 done
 ```
 
+Get all container images in cluster
 
+```bash
+kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' |\
+sort
+```
 
