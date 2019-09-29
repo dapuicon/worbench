@@ -8,6 +8,12 @@ Add annotations to pod:
 k annotate po privacymanagement-7d578b9965-d8j2b <my-annotation>=<value> 
 ```
 
+## Check rolout
+
+```bash
+kubectl rollout status deployment myapp
+```
+
 ## Patch
 
 ```bash
