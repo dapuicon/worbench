@@ -32,6 +32,15 @@ When you want to test the template rendering, but not actually install anything,
 helm install --dry-run --debug ./mychart
 ```
 
+## Helm template against remote Chart
+
+Helm template can only run in local. In order tu run helm template against a remote Chart we can do:
+
+```bash
+helm fetch <remote-repo>/cert-manager --untar
+helm template ./cert-manager/
+```
+
 ## Install
 
 ```bash
