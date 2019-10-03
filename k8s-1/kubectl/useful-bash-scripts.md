@@ -29,3 +29,13 @@ Pods running in specific node
  k get po --all-namespaces --field-selector spec.nodeName=ip-10-159-53-189.eu-west-1.compute.internal 
 ```
 
+Delete pod from a specific node
+
+```bash
+a=(`k get po --all-namespaces --field-selector spec.nodeName=ip-10-159-53-189.eu-west-1.compute.internal -o=custom-columns=NAMESPACE:metadata.namespace,NAME:metadata.name`)
+for ((i=3; i<${#a[@]}; i+=2)); do
+  echo "${a[i]}: ${a[i+1]}"
+  kubectl -n ${a[i]} delete po ${a[i+1]};
+done
+```
+
