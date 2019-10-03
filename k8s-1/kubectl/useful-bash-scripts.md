@@ -17,3 +17,15 @@ kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{"\n"}{.metadata
 sort
 ```
 
+Number of pods per Node
+
+```bash
+kubectl get pod -o=custom-columns=NODE:.spec.nodeName --all-namespaces | sed -n '1!p' | sort -n | uniq -c 
+```
+
+Pods running in specific node
+
+```bash
+ k get po --all-namespaces --field-selector spec.nodeName=ip-10-159-53-189.eu-west-1.compute.internal 
+```
+
