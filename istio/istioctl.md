@@ -4,6 +4,12 @@
 
 {% embed url="https://archive.istio.io/v1.1/docs/reference/commands/istioctl/" %}
 
+## Check istio installed version
+
+```bash
+istioctl version --remote
+```
+
 ## Check whether mutual TLS is enabled for a service
 
 ```bash
