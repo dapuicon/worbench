@@ -20,6 +20,18 @@ for d in `kubectl get deploy -n openapi -o name`;
 done;
 ```
 
+Enable sidecar injection on namespace
+
+```bash
+kubectl label namespace <namespace> istio-injection=enabled
+```
+
+Disable sidecar injection on namesapce
+
+```bash
+kubectl label namespace <namespace> istio-injection- 
+```
+
 Disable injection by pod / deployment
 
 ```yaml
