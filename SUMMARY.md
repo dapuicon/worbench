@@ -11,7 +11,8 @@
 * [AKS](k8s/aks.md)
 * [Istio](k8s/istio.md)
 * [Git](k8s/untitled.md)
-* [Operators](k8s/operators.md)
+* [Operators](k8s/operators/README.md)
+  * [OLM - Operator Lifecycle Manager](k8s/operators/olm-operator-lifecycle-manager.md)
 
 ## K8s <a id="k8s-1"></a>
 
