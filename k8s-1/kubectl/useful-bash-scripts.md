@@ -1,5 +1,11 @@
 # Useful bash scripts
 
+Initiate a deployment rollout
+
+```bash
+kubectl patch deploy/<nombre del deployment> -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{ \"kubernetes.io/change-cause\":\"Global config change\", \"global-config-date\":\"`date +'%s'`\"}}}}}"
+```
+
 Recreate all pods in current namespaces
 
 ```bash
