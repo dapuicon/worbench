@@ -46,5 +46,9 @@ spec:
        sidecar.istio.io/inject: "false"
 ```
 
+which is equivalent to
 
+```bash
+kubectl patch deploy/reloader-reloader -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{ \"sidecar.istio.io/inject\":\"false\"}}}}}"  
+```
 
