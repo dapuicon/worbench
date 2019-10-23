@@ -1,5 +1,11 @@
 # AKS
 
+## \# Get credentials
+
+```bash
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+```
+
 ## Deallocate vm
 
 ```bash
