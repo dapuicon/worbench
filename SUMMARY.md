@@ -5,6 +5,8 @@
 * [Postgresql](postgresql/README.md)
   * [Installations](postgresql/installations.md)
 * [Git](git.md)
+* [Utilities](utilities/README.md)
+  * [CURL](utilities/curl.md)
 
 ## K8s
 
