@@ -2,7 +2,9 @@
 
 ## Download file
 
+* -L: to follow redirections
+
 ```bash
-curl http://some.url --output some.file
+curl -L http://some.url --output some.file
 ```
 
