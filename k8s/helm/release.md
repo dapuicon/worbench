@@ -1,7 +1,7 @@
 # Release
 
 ```bash
-helm ls <release-name> --tiller-namespace=openapi --output yaml 
+helm ls <release-name> --tiller-namespace=<namespace> --output yaml 
 ```
 
 ### Rollback

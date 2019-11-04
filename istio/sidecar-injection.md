@@ -7,7 +7,7 @@ description: 'https://istio.io/docs/setup/additional-setup/sidecar-injection/'
 Manual sidecar injection
 
 ```bash
-kubectl get deploy -l app.kubernetes.io/name=atp -n openapi -o yaml | istioctl kube-inject -f - | kubectl apply -n openapi -f -
+kubectl get deploy -l app.kubernetes.io/name=atp -n <namespace> -o yaml | istioctl kube-inject -f - | kubectl apply -n <namespace> -f -
 ```
 
 Manual sidecar injectiono for all deployment
@@ -16,7 +16,7 @@ Manual sidecar injectiono for all deployment
 for d in `kubectl get deploy -n openapi -o name`;
   do;
   echo $d;
-  kubectl get $d -n openapi -o yaml | istioctl kube-inject -f - | kubectl apply -n openapi -f - ;
+  kubectl get $d -n <namespace> -o yaml | istioctl kube-inject -f - | kubectl apply -n <namespace> -f - ;
 done;
 ```
 

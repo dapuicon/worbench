@@ -44,13 +44,13 @@ helm template ./cert-manager/
 ## Install
 
 ```bash
-helm install --dry-run --debug --tiller-namespace=openapi openapi-releases/microservice -f mdggateway/PRO/values.yaml
+helm install --dry-run --debug --tiller-namespace=<namespace> repo-releases/microservice -f myfolder/PRO/values.yaml
 ```
 
 ## Upgrade
 
 ```bash
-helm upgrade mdggateway-pro openapi-releases/microservice -f mdggateway/PRO/values.yaml --dry-run --debug --tiller-namespace=openapi
+helm upgrade micro-pro repo-releases/microservice -f folder/PRO/values.yaml --dry-run --debug --tiller-namespace=<namespace>
 ```
 
 ### Download Chart content

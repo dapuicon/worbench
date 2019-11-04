@@ -15,7 +15,7 @@ istioctl version --remote
 ```bash
 istioctl authn tls-check $CLIENT_POD httpbin.default.svc.cluster.local
 # Example
-istioctl authn tls-check customerviewmdg-6df48f65c7-2ktxq.openapi translator-srv.openapi.svc.cluster.local
+istioctl authn tls-check mypod-6df48f65c7-2ktxq.mynamespace otherpod-srv.mynamespace.svc.cluster.local
 ```
 
 

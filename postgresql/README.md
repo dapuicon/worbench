@@ -1,11 +1,11 @@
 # Postgresql
 
 ```bash
-sudo ./pg_dumpall -h rds-mic-traductordb.soe-nonprod.cloud.si.orange.es -p 5432 -U traductor -l traductordb  -f dump.sql
+sudo ./pg_dumpall -h rds-mic-cloud.es -p 5432 -U <username> -l mydb  -f dump.sql
 ```
 
 ```bash
-/usr/local/pgsql-11/pg_dump --file "/var/lib/pgadmin/storage/openapi_orange.com/traductordb.sql" --host "rds-mic-traductordb.soe-nonprod.cloud.si.orange.es" --port "5432" --username "traductor" --no-password --verbose --format=p --section=data --encoding "UTF8" "traductordb"
+/usr/local/pgsql-11/pg_dump --file "/var/lib/pgadmin/storage/folder/traductordb.sql" --host "rds-mic-cloud.es" --port "5432" --username "user" --no-password --verbose --format=p --section=data --encoding "UTF8" "mydb"
 ```
 
 psql -h rds-mic-traductordb.soe-nonprod.cloud.si.orange.es -p 5432 -U traductor traductordb
@@ -23,7 +23,7 @@ traductordb-&gt; \dt List of relations Schema \| Name \| Type \| Owner --------+
 
 Para lanzar queries hay que terminarlas con;
 
-psql -h rds-mic-traductordb.soe-nonprod.cloud.si.orange.es -p 5432 -U traductor traductordb
+psql -h rds-mic.cloud.es -p 5432 -U &lt;user&gt; &lt;db\_name&gt;
 
-pg\_dumpall -h rds-mic-traductordb.soe-nonprod.cloud.si.orange.es -p 5432 -U traductor -f dump.sql
+pg\_dumpall -h rds-mic.cloud.es -p 5432 -U &lt;user&gt; -f dump.sql
 
