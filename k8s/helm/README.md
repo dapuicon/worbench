@@ -9,14 +9,14 @@ helm init --service-account <service-account> --tiller-namespace <k8s-namespace>
 Install tiller overriding image an preventing istio sidecar injection
 
 ```bash
+helm ls --tiller-namespace=<k8s-namespace> 
+```
+
+```bash
 helm init  --override spec.template.metadata.annotations."sidecar\.istio\.io/inject"="false" --tiller-namespace openapi --service-account user-admin --tiller-image thirdparties/tiller:latest
 ```
 
 List releases
-
-```bash
-helm ls --tiller-namespace=<k8s-namespace> 
-```
 
 Get deployed files
 

@@ -1,11 +1,5 @@
 # Useful bash scripts
 
-Initiate a deployment rollout
-
-```bash
-kubectl patch deploy/<nombre del deployment> -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{ \"kubernetes.io/change-cause\":\"Global config change\", \"global-config-date\":\"`date +'%s'`\"}}}}}"
-```
-
 Recreate all pods in current namespaces
 
 ```bash
@@ -43,5 +37,11 @@ for ((i=3; i<${#a[@]}; i+=2)); do
   echo "${a[i]}: ${a[i+1]}"
   kubectl -n ${a[i]} delete po ${a[i+1]};
 done
+```
+
+Deployments that has a PDB
+
+```bash
+ k get pdb --all-namespaces -o name | awk '{split($0,a,"/"); print a[2]}' | xargs -I {} kubectl -n istio-system get po {} -o wide  
 ```
 
