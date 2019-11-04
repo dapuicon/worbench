@@ -1,10 +1,10 @@
 # Release
 
 ```bash
-helm ls <release-name> --tiller-namespace=<namespace> --output yaml 
+helm ls <release-name> --tiller-namespace=<namespace> --output yaml
 ```
 
-### Rollback
+## Rollback
 
 ```bash
 helm rollback <release-name> <revision>

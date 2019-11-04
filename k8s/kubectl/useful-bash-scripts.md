@@ -20,13 +20,13 @@ sort
 Number of pods per Node
 
 ```bash
-kubectl get pod -o=custom-columns=NODE:.spec.nodeName --all-namespaces | sed -n '1!p' | sort -n | uniq -c 
+kubectl get pod -o=custom-columns=NODE:.spec.nodeName --all-namespaces | sed -n '1!p' | sort -n | uniq -c
 ```
 
 Pods running in specific node
 
 ```bash
- k get po --all-namespaces --field-selector spec.nodeName=ip-10-159-53-189.eu-west-1.compute.internal 
+ k get po --all-namespaces --field-selector spec.nodeName=ip-10-159-53-189.eu-west-1.compute.internal
 ```
 
 Delete pod from a specific node
@@ -42,6 +42,6 @@ done
 Deployments that has a PDB
 
 ```bash
- k get pdb --all-namespaces -o name | awk '{split($0,a,"/"); print a[2]}' | xargs -I {} kubectl -n istio-system get po {} -o wide  
+ k get pdb --all-namespaces -o name | awk '{split($0,a,"/"); print a[2]}' | xargs -I {} kubectl -n istio-system get po {} -o wide
 ```
 

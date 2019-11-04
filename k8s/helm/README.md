@@ -3,13 +3,13 @@
 Install tiller in namespace with service account
 
 ```bash
-helm init --service-account <service-account> --tiller-namespace <k8s-namespace> 
+helm init --service-account <service-account> --tiller-namespace <k8s-namespace>
 ```
 
 Install tiller overriding image an preventing istio sidecar injection
 
 ```bash
-helm ls --tiller-namespace=<k8s-namespace> 
+helm ls --tiller-namespace=<k8s-namespace>
 ```
 
 ```bash

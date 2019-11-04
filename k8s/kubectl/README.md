@@ -37,7 +37,7 @@ EOF
 Add annotations to pod:
 
 ```bash
-k annotate po privacymanagement-7d578b9965-d8j2b <my-annotation>=<value> 
+k annotate po privacymanagement-7d578b9965-d8j2b <my-annotation>=<value>
 ```
 
 ## Check rolout
@@ -49,13 +49,13 @@ kubectl rollout status deployment myapp
 ## Patch
 
 ```bash
-kubectl patch pod  privacymanagement-7d578b9965-d8j2b --type='json' -p='[{"op": "remove", "path": "/metadata/annotations/dt"}]'
-kubectl patch pod  privacymanagement-7d578b9965-d8j2b --type='json' -p='[{"op": "remove", "path": "/metadata/annotations"}]'
-kubectl patch deploy privacymanagement --type='json' -p='[{"op": "add", "path": "/spec/template/metadata/annotations", "value": {"sidecar.istio.io/inject": "false" } }]'
-kubectl patch pod privacymanagement-7d578b9965-d8j2b --type='json' -p='[{"op": "add", "path": "/metadata/annotations", "value": {"sidecar.istio.io/inject": "false" } }]'
+kubectl patch pod  mymic-7d578b9965-d8j2b --type='json' -p='[{"op": "remove", "path": "/metadata/annotations/dt"}]'
+kubectl patch pod  mymic-7d578b9965-d8j2b --type='json' -p='[{"op": "remove", "path": "/metadata/annotations"}]'
+kubectl patch deploy mymic --type='json' -p='[{"op": "add", "path": "/spec/template/metadata/annotations", "value": {"sidecar.istio.io/inject": "false" } }]'
+kubectl patch pod mymic-7d578b9965-d8j2b --type='json' -p='[{"op": "add", "path": "/metadata/annotations", "value": {"sidecar.istio.io/inject": "false" } }]'
 ```
 
-#### Copy Files from a pod to your machine
+### Copy Files from a pod to your machine
 
 ```bash
 kubectl cp {{namespace}}/{{podname}}:path/to/directory /local/path
@@ -63,10 +63,9 @@ kubectl cp {{namespace}}/{{podname}}:path/to/directory /local/path
 k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi /cygdrive/c/Users/dpuigcon/Desktop/tools/EKS/backup
 # Copying a file
 k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi/victor2.sql ./backup/victor2.sql
-
 ```
 
-#### Copy Files to a pod
+### Copy Files to a pod
 
 ```bash
 kubectl cp /local/path namespace/podname:path/to/directory 
@@ -75,6 +74,5 @@ k cp ./bakup/victor3.sql tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage
 # Copying a folder
 # mappings folder is copyied on wiremock folder
 k cp ./tmp/wiremock/mappings wiremock-server-b56dfcb4f-gkqh7:/home/wiremock
-
 ```
 

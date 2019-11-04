@@ -6,15 +6,13 @@ Istio self-signed certificates have historically had a 1 year default lifetime. 
 
 ## Enable mTLS
 
-{% embed url="https://archive.istio.io/v1.1/docs/tasks/security/authn-policy/\#globally-enabling-istio-mutual-tls" %}
+{% embed url="https://archive.istio.io/v1.1/docs/tasks/security/authn-policy/\#globally-enabling-istio-mutual-tls" caption="" %}
 
 ## Extending Self-Signed Certificate Lifetime <a id="title"></a>
 
-{% embed url="https://archive.istio.io/v1.1/help/ops/security/root-transition/" %}
+{% embed url="https://archive.istio.io/v1.1/help/ops/security/root-transition/" caption="" %}
 
 Custom certificates
 
-{% embed url="https://istio.io/docs/tasks/security/plugin-ca-cert/" %}
-
-
+{% embed url="https://istio.io/docs/tasks/security/plugin-ca-cert/" caption="" %}
 

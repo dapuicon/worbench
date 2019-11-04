@@ -29,7 +29,7 @@ kubectl label namespace <namespace> istio-injection=enabled
 Disable sidecar injection on namesapce
 
 ```bash
-kubectl label namespace <namespace> istio-injection- 
+kubectl label namespace <namespace> istio-injection-
 ```
 
 Disable injection by pod / deployment
@@ -49,6 +49,6 @@ spec:
 which is equivalent to
 
 ```bash
-kubectl patch deploy/reloader-reloader -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{ \"sidecar.istio.io/inject\":\"false\"}}}}}"  
+kubectl patch deploy/reloader-reloader -p "{\"spec\":{\"template\":{\"metadata\":{\"annotations\":{ \"sidecar.istio.io/inject\":\"false\"}}}}}"
 ```
 
