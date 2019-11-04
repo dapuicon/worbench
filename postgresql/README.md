@@ -8,7 +8,7 @@ sudo ./pg_dumpall -h rds-mic-cloud.es -p 5432 -U <username> -l mydb  -f dump.sql
 /usr/local/pgsql-11/pg_dump --file "/var/lib/pgadmin/storage/folder/traductordb.sql" --host "rds-mic-cloud.es" --port "5432" --username "user" --no-password --verbose --format=p --section=data --encoding "UTF8" "mydb"
 ```
 
-psql -h rds-mic-traductordb.soe-nonprod.cloud.si.orange.es -p 5432 -U traductor traductordb
+psql -h rds-mic-cloud.es -p 5432 -U &lt;user&gt; mydb
 
 ver tablas del esquema:
 

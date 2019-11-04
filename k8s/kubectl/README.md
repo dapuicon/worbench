@@ -60,7 +60,7 @@ kubectl patch pod privacymanagement-7d578b9965-d8j2b --type='json' -p='[{"op": "
 ```bash
 kubectl cp {{namespace}}/{{podname}}:path/to/directory /local/path
 # Example
-k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi /cygdrive/c/Users/dpuigcon/Desktop/Everis/Orange Open Api/tools/EKS/backup
+k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi /cygdrive/c/Users/dpuigcon/Desktop/tools/EKS/backup
 # Copying a file
 k cp tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage/openapi/victor2.sql ./backup/victor2.sql
 
