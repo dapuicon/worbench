@@ -53,3 +53,9 @@ helm install --dry-run --debug --tiller-namespace=openapi openapi-releases/micro
 helm upgrade mdggateway-pro openapi-releases/microservice -f mdggateway/PRO/values.yaml --dry-run --debug --tiller-namespace=openapi
 ```
 
+### Download Chart content
+
+```bash
+ helm fetch stakater/reloader --untar
+```
+
