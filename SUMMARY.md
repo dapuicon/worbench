@@ -4,7 +4,8 @@
 * [Linux](linux.md)
 * [Postgresql](postgresql/README.md)
   * [Installations](postgresql/installations.md)
-* [Git](git.md)
+* [Git](git/README.md)
+  * [Github](git/github.md)
 * [Utilities](utilities/README.md)
   * [CURL](utilities/curl.md)
 

@@ -1,0 +1,4 @@
+https://github.com/dapuicon/chasqui.git
+https://github.com/dapuicon/Samples.git
+https://github.com/dapuicon/site.git
+--meter los repos antes de esta linea y no dejéis un salto de línea a continuación de esta--
