@@ -76,6 +76,12 @@ k cp ./bakup/victor3.sql tools/pgadmin-7c946c7c5f-pc9th:/var/lib/pgadmin/storage
 k cp ./tmp/wiremock/mappings wiremock-server-b56dfcb4f-gkqh7:/home/wiremock
 ```
 
+### Delete all jobs pods
+
+```bash
+ kubectl get pods -n openapi --no-headers=true | awk '/hello-*/ {print $1}' | xargs kubectl delete -n openapi pod
+```
+
 ### Others
 
 Cluster info `$ kubectl cluster-info`
