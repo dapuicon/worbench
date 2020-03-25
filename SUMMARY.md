@@ -18,6 +18,7 @@
 * [Operators](k8s/operators/README.md)
   * [OLM - Operator Lifecycle Manager](k8s/operators/olm-operator-lifecycle-manager.md)
 * [Kubectl](k8s/kubectl/README.md)
+  * [CronJob](k8s/kubectl/cronjob.md)
   * [Useful bash scripts](k8s/kubectl/useful-bash-scripts.md)
   * [Resourcers limits](k8s/kubectl/resourcers-limits.md)
 * [Prometheus](k8s/prometheus.md)
