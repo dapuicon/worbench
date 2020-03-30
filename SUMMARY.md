@@ -28,4 +28,5 @@
 * [Sidecar-Injection](istio/sidecar-injection.md)
 * [mTLS](istio/mtls.md)
 * [istioctl](istio/istioctl.md)
+* [Bash](bash.md)
 
