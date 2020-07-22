@@ -28,5 +28,9 @@
 * [Sidecar-Injection](istio/sidecar-injection.md)
 * [mTLS](istio/mtls.md)
 * [istioctl](istio/istioctl.md)
+* [curl from istio proxy](istio/curl-from-istio-proxy.md)
+
+---
+
 * [Bash](bash.md)
 
